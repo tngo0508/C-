@@ -1,0 +1,62 @@
+301
+Function moveNodeToFirst
+Assumptions: No duplicates
+Careful: Start looping from second node.
+(any key)	List is empty		Print error message.
+Key is: 2	List is: 1 2		List becomes: 2 1
+Key is: 5	List is: 3 5 1 2	List becomes: 5 3 1 2
+Key is: 2	List is: 4 6 3 2 1 5	List becomes: 2 4 6 3 1 5	
+Key is: 7	List is: 2 8 4 6 7 	List becomes: 7 2 8 4 6
+Key is: 4	List is: 8 6 3 2 1 7	No change.
+
+	
+302
+Function moveNodeToLast
+Assumptions: No duplicates
+Careful: Stop looping when reaching last node.
+(any key)	List is empty		Print error message.
+Key is: 1	List is: 1 2		List becomes: 2 1
+Key is: 5	List is: 3 5 1 2	List becomes: 3 1 2 5
+Key is: 2	List is: 4 6 3 2 1 5	List becomes: 4 6 3 1 5	2 
+Key is: 7	List is: 7 8 4 6 2 	List becomes: 8 4 6 2 7
+Key is: 4	List is: 8 6 3 2 1 7	No change.
+
+
+303
+Function moveNodeToBeforeLast
+Assumptions: No duplicates
+Careful: Check last node and then stop looping when node before last is reached 
+(can be done in reverse).
+(any key)	List is empty		Print error message.
+Key is: 2	List is: 1 2		List becomes: 2 1
+Key is: 6	List is: 6 4 2 9 7	List becomes: 4 2 9 6 7
+Key is: 5	List is: 3 5 1 2	List becomes: 3 1 5 2 
+Key is: 2	List is: 4 6 3 2 1 5	List becomes: 4 6 3 1 2 5
+Key is: 6	List is: 7 8 4 6 2 	No change.
+Key is: 7	List is: 8 6 3 2 1 7	List becomes: 8 6 3 2 7 1 
+
+
+304
+Function moveNodeToSecond
+Assumptions: No duplicates
+Careful: Check first node and then start looping at third node.
+(any key)	List is empty		Print error message.
+Key is: 1	List is: 1 2		List becomes: 2 1
+Key is: 6	List is: 6 4 2 9 7	List becomes: 4 6 2 9 7
+Key is: 3	List is: 4 6 3 2 1 5	List becomes: 4 3 6 2 1 5
+Key is: 6	List is: 7 8 4 6 2 	List becomes: 7 6 8 4 2
+Key is: 7	List is: 8 6 3 2 1 7	List becomes: 8 7 6 3 2 1 
+Key is: 5	List is: 3 5 1 2	No change.
+
+
+
+
+
+
+
+
+
+
+
+
+
